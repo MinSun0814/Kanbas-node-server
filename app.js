@@ -3,7 +3,7 @@ import cors from 'cors';
 import HelloRoutes from "./hello.js";
 import Lab5 from "./lab5.js";
 import CourseRoutes from "./courses/routes.js";
-import ModuleRoutes from "./Modules/routes.js";
+import ModuleRoutes from "./modules/routes.js";
 import "dotenv/config";
 const app = express();
 app.use(express.json());
