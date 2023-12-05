@@ -4,7 +4,7 @@ function CourseRoutes(app) {
     const courses = Database.courses;
     res.send(courses);
   });
-
+ 
   app.delete("/api/courses/:id", (req, res) => {
     const { id } = req.params;
     Database.courses = Database.courses
