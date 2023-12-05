@@ -39,6 +39,13 @@ function Lab5 (app) {
     res.json(newTodo);
   });
 
+  app.get("/poi/:name", (req, res) => {
+    const name = req.params.name;
+    const greeting = "Hello " + name;
+    res.json(greeting);
+  });
+
+
 
   app.get("/a5/todos/create", (req, res) => {
     const newTodo = {
